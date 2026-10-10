@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ☕ Americano Portfolio
 
-## Getting Started
+A modern, responsive personal portfolio built with **Next.js, React, and TypeScript**. Featuring interactive components, API integration, and a clean user experience.
 
-First, run the development server:
+### 🌐 Live Demo
+
+**[Visit Americano Portfolio ↗](https://americano-by-aa.vercel.app/)**
+
+---
+
+## ✨ Features
+
+- **Responsive Design** — Optimized for desktop and mobile devices.
+- **Interactive UI** — Smooth navigation and engaging user interactions.
+- **Coffee & What? ☕** — Discover random Thai dishes with a single click.
+- **API Integration** — Fetch real food data from a public REST API.
+- **Loading & Error Handling** — Smooth experience while fetching and displaying data.
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| **Next.js** | React Framework & App Router |
+| **React** | UI Components & State Management |
+| **TypeScript** | Type Safety |
+| **Tailwind CSS** | Styling (if configured) |
+| **REST API** | External Data Integration |
+| **Vercel** | Hosting & Deployment |
+
+## 🔗 API Integration
+
+This project integrates with **[TheMealDB API](https://www.themealdb.com/api.php)** to display random Thai food recommendations in the *Coffee & What?* section.
+
+**API Endpoint**
+
+`GET https://www.themealdb.com/api/json/v1/1/filter.php?a=Thai`
+
+The application fetches Thai dishes and randomly selects a meal to display, including its name and image.
+
+## 🚀 Getting Started
+
+**1. Clone the repository**
+
+```bash
+git clone <your-repository-url>
+cd <your-project-folder>
+```
+
+**2. Install dependencies**
+
+```bash
+npm install
+```
+
+**3. Start the development server**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**4. Open your browser**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Visit [http://localhost:3000](http://localhost:3000) to explore the website locally.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ☁️ Deployment
 
-## Learn More
+This project is deployed on **Vercel**, with automatic deployments through GitHub integration.
 
-To learn more about Next.js, take a look at the following resources:
+**Live Website:** [americano-by-aa.vercel.app](https://americano-by-aa.vercel.app/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built with ☕ and curiosity.
