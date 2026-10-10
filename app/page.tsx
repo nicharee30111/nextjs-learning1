@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { DrinkCard } from "./components/Coffee";
+import CoffeeAndWhat from "./components/CoffeeAndWhat";
 import pureAmericano from "./image/home/Pure Americano.png";
 import coffeeLogo from "./image/logo/AA Coffee Logo.png";
 import coconut from "./image/menu/Coconut Americano.png";
@@ -74,6 +75,7 @@ export default function Home() {
         <div className="grid grid-cols-1 gap-x-7 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">{drinks.map((drink) => <DrinkCard key={drink.name} {...drink} />)}</div>
         <p className="menu-note">A taste of what we do. Crafted to enjoy, one sip at a time.</p>
       </section>
+      <CoffeeAndWhat />
       <section id="about" className="lab-story" aria-labelledby="story-title"><div className="lab-container story-grid">
         <div className="story-logo-block">
           <div className="story-logo-circle">
@@ -92,12 +94,23 @@ export default function Home() {
         <p>AMERICANO By AA เริ่มต้นจากความเชื่อเรียบง่ายว่า กาแฟที่ดีควรมีรสชาติเป็นของตัวเอง แม้จะถูกเติมแต่งด้วยความคิดสร้างสรรค์</p>
         <p>เราจึงเลือกกาแฟโรบัสต้าจาก <b>เขาทะลุ จังหวัดชุมพร</b> แหล่งกาแฟไทยที่ขึ้นชื่อเรื่องรสชาติเข้มข้น หนักแน่น และกลิ่นหอมอันเป็นเอกลักษณ์ มาเป็นหัวใจของทุกแก้ว</p>
         <p>ไม่ว่าจะเป็นความสดชื่นของส้ม ความเปรี้ยวละมุนของเลมอน หรือความหอมหวานของน้ำผึ้ง เราอยากให้ทุกส่วนผสมช่วยเปิดมิติใหม่ของรสชาติ โดยไม่กลบเสน่ห์ของกาแฟ</p>
-        <a className="story-link" href="#contact">Let&apos;s connect <span aria-hidden="true">&#8599;</span></a></div>
+        </div>
       </div></section>
     </main>
     <footer id="contact" className="lab-footer lab-container">
       <div><a className="lab-logo" href="#home">AMERICANO <span>By AA<span className="olive">&reg;</span></span></a><p>Your daily coffee. A new perspective.</p></div>
-      <div className="footer-contact"><p className="eyebrow">SAY HELLO</p><span>nicharee30111@gmail.com</span><small>Fictional brand &middot; Showcase concept</small></div>
+      <div className="footer-contact">
+        <p className="eyebrow">LET&apos;S CONNECT</p>
+        <div className="flex flex-col items-start gap-2 text-[13px]">
+         <p className="eyebrow">Email : <a href="mailto:nicharee30111@gmail.com" className="inline-flex min-h-11 max-w-full flex-wrap items-center gap-x-3 gap-y-1 hover:text-[#687245] hover:underline">
+            <span className="break-all">nicharee30111@gmail.com</span>
+          </a>
+          <br />GitHub : <a href="https://github.com/nicharee30111" target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center gap-3 hover:text-[#687245] hover:underline" aria-label="GitHub: nicharee30111 (opens in a new tab)">
+             <span>nicharee30111</span>
+          </a></p>
+        </div>
+        <small>Fictional brand &middot; Showcase concept</small>
+      </div>
       <div className="footer-bottom"><span>&copy; 2026 AMERICANO By AA</span><a href="#home">Back to top &#8593;</a><span>BREWED WITH CURIOSITY.</span></div>
     </footer>
   </div>;
